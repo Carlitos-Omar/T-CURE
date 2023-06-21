@@ -1,0 +1,153 @@
+
+.bg-custom{
+  background-color: #1b472e;
+}
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+.logo {
+  display: flex;
+  justify-content: space-between; /* Reemplaza "flex-end" con "space-between" */
+  align-items: center;
+}
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-nav .nav-link {
+  font-size: 18px;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 10px;
+}
+#cart-count {
+  position: relative;
+  display: inline-block;
+  padding: 3px 8px;
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  top: -10px;
+  left: -5px;
+}
+.card.small-card{
+  max-width: 350px;
+   margin: 0 auto;
+   
+}
+.card-group {
+  margin-bottom: 30px; /* Agrega un margen inferior entre los grupos de tarjetas */
+
+
+}
+     /*colocamos una imagen */
+     .image-container {
+        background: url(img/fondo1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 750px;
+    }
+    /*darle estilo al titulo dentro de la imagen*/
+    .text-container {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff; 
+        font-size: 30px;
+        text-shadow: 2px 2px 4px #000;
+    }
+    /*es para poner el nombre debajo del icono*/
+    .card-body a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #5a96e6;
+      }
+    /*esto es para poner de manera horizontal */
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .social-icons a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        margin: 0 10px;
+      }
+      /*es para quitar el fonfo de boostrap*/
+    .custom-navbar-nav {
+        background-color: transparent;
+      }
+    /*DARLE ESTILO DE MANERA HORIZONTAL*/
+      .team-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /*es darle u marguen para separa los div*/
+    .card {
+        flex: 1;
+        margin-right: 10px;
+    }
+    
+    /*ES PARA JUSTIFICAR LAS IMAGENES*/
+    .card-img-top {
+        object-fit: cover;
+        height: 600px; /* Ajusta aquí el tamaño deseado */
+        width: 90%; /* Ajusta aquí el tamaño deseado */
+    }
+    
+    /*es para colocar el color a las letras del pie de pagina*/
+    .card-footer-white {
+      color: white;
+    }
+    @media screen and (max-width: 768px) {
+      .card-footer-white {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .card-footer-white .separator {
+        display: none;
+      }
+      
+      .card-footer-white span {
+        margin-bottom: 10px;
+      }
+    }
+    card-body a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #5a96e6;
+    }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Pago.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark  custom-header">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="Logo.jpg" style="width: 50px; height: 50px;  border-radius: 50%; object-fit: cover;"  alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid  principal">
+        <h1>T`CURE</h1>
+        <div class=" row flex-column-reverse flex-lg-row align-items-center">
+
+                <!-- Ventana de productos seleccionados -->
+                <div id="product-popup" class="hidden">
+                    <h3>Productos</h3>
+                    <div id="product-popup-content">
+                        <div id="selected-products" class="selected-products-container">
+                            <!-- Aquí se mostrarán los productos seleccionados -->
+                        </div>
+                        <p id="total-price" class="total-price">  Precio total: </p>
+                      
+                    </div>
+                
+            </div>
+            
+            <div class="col-lg-6 order-lg-1">
+                <!-- Formulario de pago -->
+                <div id="form-container">
+                    <form id="payment-form">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="lastname">Apellido:</label>
+                        <input type="text" id="lastname" name="lastname" required>
+
+                        <input type="hidden" id="selected-products-input" name="selectedProducts" value="">
+                        <button type="submit" id="pay-button">Realizar Pedido</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ventana emergente de compra exitosa -->
+    <div id="success-popup" class="ocultar">
+        <div class="success-message">
+            <h3>Compra exitosa</h3>
+            <p>¡Gracias por tu compra!</p>
+            <button id="ok-button">OK</button>
+        </div>
+    </div>
+
+    <script src="Pago.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
